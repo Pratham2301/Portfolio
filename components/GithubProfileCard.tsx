@@ -25,7 +25,7 @@ const GithubProfileCard = ({ avatar_url, bio, location }: GithubUserType) => {
               </p>
               <p className="text-white mt-3">{bio}</p>
               <div className='d-flex align-items-center justify-content-start'>
-                <div className="my-3 icon-shape bg-gradient-grey shadow rounded text-info me-5">
+                <div className="my-3 icon-shape bg-gradient-white shadow rounded text-dark me-5">
                   <i className="ni ni-pin-3 text-info mr-2" />
                   {location}
                 </div>

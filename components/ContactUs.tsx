@@ -18,6 +18,11 @@ import {
 } from 'reactstrap';
 
 export const ContactUs = () => {
+
+  const [emailid, setEmailId] = useState("");
+  const [body, setBody] = useState("");
+  const [name, setName] = useState("");
+
   const form = useRef<HTMLFormElement>(null);
   const [alert, setAlert] = useState<{
     color: string;
@@ -43,25 +48,33 @@ export const ContactUs = () => {
 
     console.log(form.current);
 
-    const emailJsServiceId = 'service_pzrhiym';
+    const emailJsServiceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
 
-    const emailJsTemplateId = 'template_fy91pwg';
+    const emailJsTemplateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
 
-    const emailJsPublicKey = 'u2h6e0Tl3rhp73FZF';
+    const emailJsPublicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
+
+    var templateParams = {
+      name: name,
+      email: emailid,
+      notes: body
+    };
+
+    console.log(templateParams);
 
     if (
       emailJsServiceId &&
       emailJsTemplateId &&
-      emailJsPublicKey && 
-      form.current
+      emailJsPublicKey &&
+      templateParams
     ) {
 
       // console.log("sending...")
       emailjs
-        .sendForm(
+        .send(
           emailJsServiceId,
           emailJsTemplateId,
-          form.current,
+          templateParams,
           emailJsPublicKey
         )
         .then(
@@ -75,13 +88,13 @@ export const ContactUs = () => {
           }
         );
 
-        // console.log("sent...")
+      // console.log("sent...")
     }
   };
 
   return (
     <>
-      <section className="section section-lg section-shaped rounded-0" style={{background: 'linear-gradient(90deg, rgba(70,65,149,1) 22%, rgba(142,83,185,1) 75%, rgba(226,81,200,1) 100%)'}}>
+      <section className="section section-lg section-shaped rounded-0" style={{ background: 'linear-gradient(90deg, rgba(70,65,149,1) 22%, rgba(142,83,185,1) 75%, rgba(226,81,200,1) 100%)' }}>
         <form ref={form} onSubmit={sendEmail}>
           {alert && (
             <Alert
@@ -110,6 +123,7 @@ export const ContactUs = () => {
                           placeholder="Your name"
                           type="text"
                           name="user_name"
+                          onChange={(e) => { setName(e.target.value); console.log(name)}}
                         />
                       </InputGroup>
                     </FormGroup>
@@ -124,6 +138,7 @@ export const ContactUs = () => {
                           placeholder="Email address"
                           name="user_email"
                           type="email"
+                          onChange={(e) => { setEmailId(e.target.value); console.log(emailid)}}
                         />
                       </InputGroup>
                     </FormGroup>
@@ -135,6 +150,7 @@ export const ContactUs = () => {
                         placeholder="Type a message..."
                         rows="4"
                         type="textarea"
+                        onChange={(e) => { setBody(e.target.value); console.log(body)}}
                       />
                     </FormGroup>
                     <div>

@@ -25,7 +25,7 @@ const ExperienceCard = ({
           style={{ flex: 1 }}
           className="shadow-lg--hover mb-3 shadow border-0 text-center rounded"
         >
-          <CardBody className="">
+          <CardBody style={{ minHeight: '15rem', backgroundColor: '#172b4d', color: 'white' }}>
             <img
               src={companyLogo}
               style={{
@@ -42,14 +42,14 @@ const ExperienceCard = ({
               className="shadow mb-3"
               alt={companyLogo}
             />
-            <CardTitle tag="h4" className="mb-2">
+            <CardTitle tag="h4" className="mb-2 text-white">
               {company}
             </CardTitle>
-            <CardSubtitle tag="h5" className="mb-2">
+            <CardSubtitle tag="h5" className="mb-2 text-white">
               {role}
             </CardSubtitle>
             <CardSubtitle>{date}</CardSubtitle>
-            <CardText tag="div" className="description my-3 text-left">
+            <CardText tag="div" className="description my-4 text-center">
               {desc}
               <ul>
                 {descBullets

@@ -19,7 +19,7 @@ export const greetings = {
 	name: "Pratham Rajbhoj",
 	title: "Hey all, I'm Pratham Rajbhoj",
 	description:
-		"I'm passionate Full Stack web developer, a Competitive Programmer having an experience of web applications with Python, Django, Node.js, Express.js, RestFramework, Javascript, React.js and many more... ",
+		"I'm a passionate full stack web developer, and a great problem solver, having an experience of building web applications using React.js, Node.js, Next.js, Django, RestFramework, AWS, GCP and many more... ",
 	resumeLink:
 		"https://drive.google.com/file/d/18RI_cXOti0fbnLLMy34gBReyT8DGHXyO/view?usp=share_link",
 };
@@ -53,8 +53,14 @@ export const skillsSection: SkillsSectionType = {
 				emoji(
 					'⚡ Building responsive Single-Page-Apps (SPA) & PWA in React.js'
 				),
-				emoji('⚡ Building responsive static websites using Next.js'),
-				emoji('⚡ Building RESTful APIs in Django & Django REST Framework'),
+				emoji('⚡ Building RESTful APIs in Node.js and Django'),
+				emoji('⚡ Experience of working on cloud platforms such as AWS, GCP'),
+				emoji(
+					'⚡ Hosting and maintaining websites along with databases'
+				),
+				emoji(
+					'⚡ Experience of building AI-ML-DL based Applications'
+				),
 			],
 			softwareSkills: [
 				{
@@ -108,37 +114,41 @@ export const skillsSection: SkillsSectionType = {
 			title: 'Prgramming Languages',
 			lottieAnimationFile: '/lottie/skills/cloudinfra.json', // Path of Lottie Animation JSON File
 			skills: [
-				emoji('⚡ Experience of working on multiple cloud platforms'),
+				emoji('⚡ Having my hands on C++, Python, Java and JavaScript'),
 				emoji(
-					'⚡ Hosting and maintaining websites on virtual machine instances along with integration of databases'
+					'⚡ Practised 1500+ Data Structures Problems using C++'
 				),
 				emoji(
-					'⚡ Building CI/CD pipelines for automated testing & deployment using Github Actions'
+					'⚡ Implemented OOPs Principles using C++ and Java'
 				),
 			],
 			softwareSkills: [
 				// ? Check README To get icon details
 
 				{
-					skillName: 'Azure',
+					skillName: 'C',
 					fontAwesomeClassName: 'devicon:c',
 				},
 				{
-					skillName: 'Heroku',
+					skillName: 'C plus plus',
 					fontAwesomeClassName: 'logos:c-plusplus',
 				},
 				{
-					skillName: 'PostgreSQL',
+					skillName: 'Python',
 					fontAwesomeClassName: 'devicon:python',
 				},
 
 				{
-					skillName: 'Docker',
+					skillName: 'Java',
 					fontAwesomeClassName: 'logos:java',
 				},
 				{
-					skillName: 'Docker',
+					skillName: 'SQL',
 					fontAwesomeClassName: 'ant-design:console-sql-outlined',
+				},
+				{
+					skillName: 'JavaScript',
+					fontAwesomeClassName: 'logos:javascript',
 				},
 			],
 		},
@@ -171,7 +181,7 @@ export const SkillBars: SkillBarsType[] = [
 export const educationInfo: EducationType[] = [
 	{
 		schoolName: "Shri Ramdeobaba College of Engineering and Management, Nagpur",
-		subHeader: "B.Tech in Computer Science",
+		subHeader: "B.Tech in Computer Science and Engineering",
 		duration: "2020 - 2024",
 		desc: "",
 		grade: "9.36 CGPA",
@@ -182,7 +192,7 @@ export const educationInfo: EducationType[] = [
 	},
 	{
 		schoolName: "Yashoda Higher Secondary College, Nagpur",
-		subHeader: "Secondary - 12th",
+		subHeader: "Secondary - 12th Science",
 		duration: "2018 - 2020",
 		desc: "",
 		grade: "85.54%",
@@ -209,14 +219,14 @@ export const experience: ExperienceType[] = [
 		role: "Backend Intern",
 		company: "QuikSpares",
 		date: "Mar 2023 - May 2023 (3-months)",
-		desc: "I worked as backend web developer to design backend using Node.js, RestFramework some other libraries.",
+		desc: "I was responsible for design and development of backend for managing the trade of various spare parts using Node.js, Express, MongoDB, Firebase, JWT, Twilio",
 		companyLogo: '/img/icons/common/quikspares.png',
 	},
 	{
 		role: "Backend Intern",
 		company: "Catalysing Dream and Beyond",
 		date: "Feb 2022 - Jul 2022 (6-months)",
-		desc: "I worked as backend web developer to design backend using Django, RestFramework some other libraries.",
+		desc: "I worked as a backend web developer to contribute in design and development of an online Assessment platform - Know Your Prep, using Django RestFramework, Firebase, Google-Apis",
 		companyLogo: '/img/icons/common/o1.jfif',
 	},
 
@@ -244,7 +254,7 @@ export const Volunteerexperience: VolunteerExperienceType[] = [
 		company: "Geeks for Geeks Chapter",
 		companylogo: "/img/icons/common/gfg.jfif",
 		date: "Sept 2022 - Present",
-		desc: "Worked in Development of Club website and was a github repository maintainer for open source event 'Git-For-Geeks' and successfully merged 400+ PRs",
+		desc: "Worked in Development of Club website and as a github repository maintainer for open source event 'Git-For-Geeks' by successfully merging 400+ PRs",
 	},
 	{
 		role: "CP Problem Setter",
@@ -270,6 +280,42 @@ export const projects: ProjectType[] = [
 		link: "https://collegewit.netlify.app/",
 	},
 	{
+		name: "Skin-Genics",
+		desc: "A Skin Cancer Detection Application, that classifies cancer between Benign (Non-Cancerous) and Malignant (Cancerous) using Deep Learning",
+		github: "https://github.com/Pratham2301/Cancer_Detection_Deep_Learning",
+		link: "https://skingenicss.netlify.app/",
+	},
+	{
+		name: "Shopify",
+		desc: "A Full Stack Cloud based E-Commerce Application with features like Authentication, Pyament Gateway, Admin Panel, Dynamic Data, etc...",
+		github: "https://github.com/Pratham2301?tab=repositories",
+		// link: "https://collegewit.netlify.app/",
+	},
+	{
+		name: "Scrapy - Web Scrapping",
+		desc: "A Web Scrapping and Crawling application built using Scrapy and python. Scrapped Data is stored on MongoDB Cloud",
+		github: "https://github.com/Pratham2301/Scrapy-Web-Scrapping",
+		// link: "https://collegewit.netlify.app/",
+	},
+	{
+		name: "Contact Manager",
+		desc: "An application to control the user's contact list. Integrated JWT to provide safe and secured authentication",
+		github: "https://github.com/Pratham2301/Contact-Manager-Node-Rest-Api",
+		// link: "https://collegewit.netlify.app/",
+	},
+	{
+		name: "Car Evaluation Model",
+		desc: "A Machine Learning - KNN Model to classify car into multiple classes based on its attributes with 94% accuracy",
+		github: "https://github.com/Pratham2301/Car_Evaluation_Model",
+		// link: "https://collegewit.netlify.app/",
+	},
+	{
+		name: "Flower Classification",
+		desc: "A Machine Learning Model built using and served using Python to classify flowers into 2 classes using IRIS Dataset",
+		github: "https://github.com/Pratham2301/IRIS-Dataset-Flower-Classification",
+		// link: "https://collegewit.netlify.app/",
+	},
+	{
 		name: "URL-Shortner",
 		desc: "A Web-App which converts long URL into a short URL, and User gets analysis for each shortened Link",
 		github: "https://github.com/Pratham2301/url_shortner",
@@ -283,8 +329,8 @@ export const projects: ProjectType[] = [
 	},
 	{
 		name: "Portfolio",
-		desc: "My Personal Portfolio to showcase my Skills, Experience and Projects",
-		github: "https://github.com/Pratham2301/My-Portfolio",
+		desc: "My Personal Portfolio built using Next.js template to showcase my Skills, Education, Experience, Projects, Awards and Achievements",
+		github: "https://github.com/Pratham2301/Portfolio",
 		link: "https://pratham-rajbhoj.netlify.app/",
 	},
 	{
@@ -314,14 +360,19 @@ export const projects: ProjectType[] = [
 
 export const feedbacks: FeedbackType[] = [
 	{
-		name: "Smart India Hackathon 2022 Finalist",
+		name: "Smart India Hackathon 2022 Finalist (Team Leader)",
 		feedback:
 			"My Team 'Bots With Brains' was selected for Finals of SIH-22. Top 3k students were selected out of 15L. Our Problem Statement was to Design a solution to help elderly citizens of India fight brain diseases by playing Mind-Games.",
 	},
 	{
-		name: "Google x AMD - Solving For India Hackathon Regionalist & Institute Winner",
+		name: "4 ⭐ on Codechef",
 		feedback:
-			"My Team 'Bots With Brains' was selected for Finals of SIH-22. Top 3k students were selected out of 15L. Our Problem Statement was to Design a solution to help elderly citizens of India fight brain diseases by playing Mind-Games.",
+			"Rated 1850+ on Codechef, and solved 500+ Problems on the platform",
+	},
+	{
+		name: "Institute Winner - Google Cloud x AMD - Solving For India Hackathon (Team Leader)",
+		feedback:
+			"Our Team 'Bots With Brains' was declared Institute Winner and we got a chance to showcase our project 'SkinGenics' at West Regionals, infront of Google-Cloud, GFG and AMD Experts",
 	},
 	{
 		name: "Winner - IIT Bombay Techfest-CoDecode 2022",
@@ -334,14 +385,14 @@ export const feedbacks: FeedbackType[] = [
 			"Rated 1880+ on Leetcode, and solved 400+ Problems on the platform",
 	},
 	{
-		name: "4 Star on Codechef",
-		feedback:
-			"Rated 1850+ on Codechef, and solved 500+ Problems on the platform",
-	},
-	{
 		name: "Specialist on Codeforces (1400+)",
 		feedback:
 			"Rated 1350 on Codechef, and solved 300+ Problems on the platform",
+	},
+	{
+		name: "TOP 250 in ICPC Preliminary 2023",
+		feedback:
+			"Achieved an under 250 rank in ICPC Mathura Online Preliminary Round and under 400 in Amritapuri Region",
 	},
 	{
 		name: "Google ML Bootcamp",
@@ -352,6 +403,11 @@ export const feedbacks: FeedbackType[] = [
 		name: "Publicis Sapient Jumpstart 2022 Finalist",
 		feedback:
 			"Qualified for the Final Round of Programming Event Organized by Publicis Sapient in 2022",
+	},
+	{
+		name: "Technical Treasure 2023 Winner",
+		feedback:
+			"It was a multiple round based Technical Competition (Aptitude + Coding + Interview) organised by Communique, ECE Dept. RCOEEM, Nagpur.",
 	},
 	{
 		name: "Auto-Coders 2022 Winner",
@@ -369,20 +425,30 @@ export const feedbacks: FeedbackType[] = [
 			"It was an National Level Competitive Coding Competition held on Coding Ninjas, by Technical Club RCOEM, Nagpur in 2023",
 	},
 	{
-		name: "Rank #2 in Anjuman Coding Contest",
+		name: "Rank #2 in TechSaga Coding Contest",
 		feedback:
-			"It was an National Level Competitive Coding Competition held on Coding Ninjas, by Technical Club RCOEM, Nagpur in 2023",
+			"It was an Aptitude and Competitive Coding Competition organised at Anjuman Engg. College, Nagpur in 2023",
 	},
 	{
-		name: "Social Summer Of Code - 2022",
+		name: "Rank #2 in Crack-O-Ween",
 		feedback:
-			"Opensource Web Development Contributor",
+			"Got Rank 2 in Crack-O-Ween, a CTF and Web development based hackathon  organized during Polaris by CSE Dept. in 2022",
 	},
 	{
-		name: "Social Winter Of Code - 2023",
+		name: "Rank #2 in Algorith Unlock",
 		feedback:
-			"Opensource Web Development Contributor",
+			"Got Rank 2 in Algorith Unlock, a Competitive Coding Competition, organized during Polaris by CSE Dept. in 2022",
 	},
+	// {
+	// 	name: "Social Summer Of Code - 2022",
+	// 	feedback:
+	// 		"Opensource Web Development Contributor",
+	// },
+	// {
+	// 	name: "Social Winter Of Code - 2023",
+	// 	feedback:
+	// 		"Opensource Web Development Contributor",
+	// },
 ];
 
 // option to hide or show the ContactUs component

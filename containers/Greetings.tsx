@@ -13,7 +13,8 @@ const Greetings = () => {
   return (
     <main>
       <div className="position-relative">
-        <section className="section section-lg section-shaped pb-150" style={{background: 'linear-gradient(90deg, rgba(70,65,149,1) 22%, rgba(142,83,185,1) 75%, rgba(226,81,200,1) 100%)'}}>
+        <section 
+        className="section section-lg section-shaped pb-150" style={{background: 'linear-gradient(90deg, rgba(70,65,149,1) 22%, rgba(142,83,185,1) 75%, rgba(226,81,200,1) 100%)'}}>
           <div className="shape shape-style-1 bg-gradient-info">
             <span />
             <span />

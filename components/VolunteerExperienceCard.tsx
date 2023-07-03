@@ -19,7 +19,7 @@ const VolunteerExperienceCard = ({ role, company, companylogo, date, desc}: Volu
                     style={{ flex: 1 }}
                     className="shadow-lg--hover mb-3 shadow border-0 text-center rounded"
                 >
-                    <CardBody className="">
+                    <CardBody style={{ minHeight: '15rem', backgroundColor: '#172b4d', color: 'white' }}>
                         <img
                             src={companylogo}
                             style={{
@@ -36,10 +36,10 @@ const VolunteerExperienceCard = ({ role, company, companylogo, date, desc}: Volu
                             className="shadow mb-3"
                             alt={companylogo}
                         />
-                        <CardTitle tag="h4" className="mb-2">
+                        <CardTitle tag="h4" className="mb-2 text-white">
                             {company}
                         </CardTitle>
-                        <CardSubtitle tag="h5" className="mb-2">
+                        <CardSubtitle tag="h5" className="mb-2 text-white">
                             {role}
                         </CardSubtitle>
                         <CardSubtitle>{date}</CardSubtitle>

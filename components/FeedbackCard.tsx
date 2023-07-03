@@ -7,7 +7,7 @@ const FeedbackCard = ({ name, feedback }: FeedbackType) => {
   return (
     <Fade bottom duration={2000}>
       <Card className="card-lift--hover shadow mt-4">
-        <CardBody style={{ minHeight: '15rem' }}>
+        <CardBody style={{ minHeight: '15rem', backgroundColor: '#172b4d', color: 'white' }}>
           <div className="d-flex px-3" >
             <div className="pl-4">
               <h5 className="text-info">{name}</h5>

@@ -46,7 +46,7 @@ const Skills = () => {
                       );
                     })}
                   </div>
-                  <div>
+                  <div className='d-flex flex-column align-items-start justify-content-center'>
                     {section.skills.map((skill, i) => {
                       return <p key={i}>{skill}</p>;
                     })}
