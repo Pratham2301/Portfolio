@@ -13,11 +13,11 @@ const EducationCard = ({
 }: EducationType) => {
   return (
     <Fade left duration={2000}>
-      <Card className="card-lift--hover shadow mt-4 " style={{ height: 150, width: 800 }}>
-        <CardBody>
-          <div className="d-flex px-3" style={{ height: 150 }}>
+      <Card className="card-lift--hover shadow mt-4 " >
+        <CardBody >
+          <div className="d-flex px-3" style={{ minHeight: 150, width: '100vw' }}>
             <div className="pl-4">
-              <h5 className="text-info">{schoolName}</h5>
+              <h5 className="text-info text-break ">{schoolName}</h5>
               <h6>{subHeader}</h6>
               <h5>
               <Badge color="info" className="mr-1 display-2">
@@ -31,13 +31,13 @@ const EducationCard = ({
               )}
               </h5>
               <p className="description mt-3">{desc}</p>
-              <ul>
+              {/* <ul>
                 {descBullets
                   ? descBullets.map((desc) => {
                     return <li key={desc}>{desc}</li>;
                   })
                   : null}
-              </ul>
+              </ul> */}
             </div>
           </div>
         </CardBody>

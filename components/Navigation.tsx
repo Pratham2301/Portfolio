@@ -35,7 +35,7 @@ const Navigation = () => {
         >
           <Container>
             <NavbarBrand href="/" className="mr-lg-5">
-              <h2 className="text-white" id="nav-title">
+              <h2 className="text-white" id="nav-title" style={{fontSize:'1.7rem'}}>
                 {greetings.name}
               </h2>
             </NavbarBrand>
