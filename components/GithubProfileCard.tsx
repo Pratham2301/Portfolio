@@ -11,7 +11,7 @@ const GithubProfileCard = ({ avatar_url, bio, location }: GithubUserType) => {
           <Row className="">
             <Col className="order-lg-2" lg="4">
               <img
-                src={avatar_url}
+                src="https://avatars.githubusercontent.com/u/84040204?v=4"
                 style={{ width: '200px' }}
                 alt=""
                 className="rounded-circle img-center img-fluid shadow shadow-lg--hover mb-4"
@@ -23,11 +23,11 @@ const GithubProfileCard = ({ avatar_url, bio, location }: GithubUserType) => {
                 DISCUSS A PROJECT OR JUST WANT TO SAY HI? MY INBOX IS OPEN FOR
                 ALL
               </p>
-              <p className="text-white mt-3">{bio}</p>
+              <p className="text-white mt-3">Programmer | Full Stack Developer | Competitive Coding | Hustler</p>
               <div className='d-flex align-items-center justify-content-start'>
                 <div className="my-3 icon-shape bg-gradient-white shadow rounded text-dark me-5">
                   <i className="ni ni-pin-3 text-info mr-2" />
-                  {location}
+                  Nagpur
                 </div>
                 <SocialLinks />
 
