@@ -21,7 +21,7 @@ export const greetings = {
 	description:
 		"I'm a passionate full stack web developer, and a great problem solver, having an experience of building web applications using React.js, Node.js, Next.js, Django, RestFramework, AWS, GCP and many more... ",
 	resumeLink:
-		"https://drive.google.com/file/d/18RI_cXOti0fbnLLMy34gBReyT8DGHXyO/view?usp=share_link",
+		"https://drive.google.com/file/d/1YszhmKJ6O9mBUwiz85RaCwOpnByO6FbL/view?usp=drive_link",
 };
 
 export const openSource = {
